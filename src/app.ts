@@ -1,8 +1,22 @@
 import 'dotenv/config'
+
 import express from 'express'
+
+import { Server } from 'socket.io'
+import http from 'http'
+import cors from 'cors'
+
 import { router } from './router'
 
 const app = express()
+app.use(cors())
+
+const serverHttp = http.createServer(app)
+const io = new Server(serverHttp, {
+  cors: {
+    origin: '*',
+  },
+})
 
 app.use(express.json())
 
@@ -19,4 +33,4 @@ app.get('/signin/callback', (request, response) => {
   return response.json(code)
 })
 
-app.listen(4000, () => console.log('running'))
+export { serverHttp, io }
