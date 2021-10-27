@@ -6,7 +6,6 @@
 
 </br>
 </br>
-</br>
 
 ### **Back end developed in Node for the application proposed by Rocketseat on Next Level Week Heat**
 
@@ -16,7 +15,6 @@ the purpose of the application is to be an environment where users could share t
 
 ## Scripts
 
-</br>
 </br>
 
 ### Run server
