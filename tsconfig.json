@@ -6,7 +6,8 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "baseUrl": "./src/",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "typeRoots": ["./src/@types", "node_modules/@types"]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
